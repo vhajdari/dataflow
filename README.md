@@ -16,6 +16,8 @@ Running the Program:
 To run this program, use the following command:
 
 ```
-java -cp target/DatabaseTransfer-1.0-SNAPSHOT-jar-with-dependencies.jar DataTransfer main.conf 10000 table1 table2 table3
+export ROSETTA_DRIVERS=/path/to/jdbc/drivers
+java -cp target/DatabaseTransfer-1.0-SNAPSHOT-jar-with-dependencies.jar DatabaseTransfer main.conf 10000 source target table1 table2 table3
+
 ```
 Make sure the main.conf file is properly configured, and the JDBC drivers for MySQL and PostgreSQL are included in your classpath.
